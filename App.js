@@ -1,19 +1,12 @@
-import React, { Component, useState } from "react";
-import '../styles/App.css';
-import Heading from './Heading'
-import SubHeading from './SubHeading'
-import InputQuery from './InputQuery'
-import SubmitButton from './SubmitButton'
+import React, { Component } from "react"
 
-const App = () => {
-  return (
-    <div id="main">
-      <Heading />
-      <SubHeading />
-      <InputQuery />
-      <SubmitButton />
-    </div>
-  )
+class Welcome extends Component {
+  render() {
+    return <>
+            <h1>Hey {this.props.name}!</h1>;
+            <h2>Welcome to Newton School.</h2>
+    </>        
+  }
 }
 
-export default App
+export default Welcome
